@@ -1,0 +1,34 @@
+.footer {
+  background-color: #4e4e4e;
+  padding: 1rem 0;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.footer .icons a {
+  display: block;
+  cursor: pointer;
+}
+
+.footer .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 1rem;
+}
+
+.footer .icons .icon {
+  font-size: 1.4rem;
+}
+
+.footer .icons .icon path {
+  fill: #fff;
+}

@@ -1,0 +1,44 @@
+.mainContent {
+  width: 100%;
+  max-width: 500px;
+}
+
+.mainContainer {
+  display: flex;
+  height: 100%;
+  padding-top: 71px;
+  align-items: center;
+}
+
+h1,
+h2,
+.offerBtn {
+  width: 100%;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.offerBtn {
+  display: block;
+  width: fit-content;
+  margin-top: 2rem;
+  padding: 0.5rem 4rem;
+  border: 3px solid #fff;
+  text-decoration: none;
+  transition: color 1s, background-color 1s;
+}
+
+.offerBtn:hover,
+.offerBtn:active,
+.offerBtn:focus {
+  background-color: #fff;
+  color: #333;
+}

@@ -1,0 +1,33 @@
+.menu {
+  display: none;
+  list-style: none;
+  gap: 0 1.5rem;
+}
+
+.menu li .btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  text-decoration-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: text-decoration-color 0.3s;
+}
+
+.menu li .btn.disabled {
+  cursor: not-allowed;
+}
+
+.menu li .btn:hover,
+.menu li .btn:active,
+.menu li .btn:focus {
+  text-decoration-color: #ffffff;
+}
+
+@media screen and (min-width: 600px) {
+  .menu {
+    display: flex;
+  }
+}

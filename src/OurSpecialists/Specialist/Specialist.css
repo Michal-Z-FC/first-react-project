@@ -1,0 +1,40 @@
+.specialist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.specialist img {
+  width: 140px;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
+
+.specialist .bolder {
+  margin: 1.2rem 0 0.5rem;
+  font-weight: bold;
+}
+
+.specialist p {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+  .specialist {
+    flex-direction: row;
+    gap: 0 4rem;
+  }
+
+  .specialist:nth-child(2n + 2) img {
+    order: 2;
+  }
+
+  .specialist:nth-child(2n + 2) p {
+    text-align: right;
+  }
+
+  .specialist .bolder {
+    margin-top: 0;
+  }
+}
