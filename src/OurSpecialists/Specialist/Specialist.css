@@ -4,11 +4,13 @@
   align-items: center;
 }
 
-.specialist img {
-  width: 140px;
-  height: auto;
+.specialist .imageContainer {
+  flex: 0 0 140px;
   aspect-ratio: 1;
   border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .specialist .bolder {
@@ -26,11 +28,11 @@
     gap: 0 4rem;
   }
 
-  .specialist:nth-child(2n + 2) img {
+  .specialist:nth-child(even) .imageContainer {
     order: 2;
   }
 
-  .specialist:nth-child(2n + 2) p {
+  .specialist:nth-child(even) p {
     text-align: right;
   }
 

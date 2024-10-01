@@ -1,0 +1,40 @@
+.companyServices {
+  padding: 3rem 0;
+  background-color: #405d78;
+}
+
+.companyServices h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.servicesContent {
+  display: grid;
+  width: 100%;
+  max-width: 720px;
+  margin: 4rem auto 0;
+  grid-template-columns: minmax(auto, 300px);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .companyServices h3 {
+    text-align: left;
+  }
+
+  .servicesContent {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servicesContent {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}

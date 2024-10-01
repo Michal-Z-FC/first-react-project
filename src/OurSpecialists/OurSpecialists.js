@@ -5,12 +5,13 @@ import employeesData from "./data.js";
 function OurSpecialists() {
   return (
     <section id="oNas" className="ourSpecialists">
-      <div className="container ourSpecialistsContainer">
+      <div className="container">
         <h3>Nasi specjaliści</h3>
         <div className="specialistsContent">
-          {employeesData.map((employee, index) => (
-            <Specialist key={index} imageUrl={employee.imageUrl} name={employee.name} surname={employee.surname} description={employee.description} position={employee.position} />
-          ))}
+          {employeesData.map((employee, index) => {
+            const imageUrl = employee.imageUrl && employee.imageUrl.trim() !== "" ? employee.imageUrl : "images/avatar.webp";
+            return <Specialist key={index} imageUrl={imageUrl} name={employee.name} surname={employee.surname} description={employee.description} position={employee.position} />;
+          })}
         </div>
       </div>
     </section>
