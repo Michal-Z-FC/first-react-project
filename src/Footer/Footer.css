@@ -1,34 +1,42 @@
 .footer {
   background-color: #4e4e4e;
-  padding: 1rem 0;
-}
-
-.footer p {
-  font-size: 0.8rem;
-  color: #fff;
-}
-
-.footer .icons a {
-  display: block;
-  cursor: pointer;
-}
-
-.footer .icons {
-  display: flex;
-  gap: 1rem;
+  padding: 1.4rem 0;
 }
 
 .footerContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 0 1rem;
+  gap: 1rem;
 }
 
-.footer .icons .icon {
-  font-size: 1.4rem;
+.footerParagraph {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
 }
 
-.footer .icons .icon path {
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.linkIcon {
+  display: block;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.72222rem;
+}
+
+.icon path {
   fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footerContainer {
+    flex-direction: row;
+  }
 }

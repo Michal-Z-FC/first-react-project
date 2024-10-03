@@ -4,9 +4,9 @@ import employeesData from "./data.js";
 
 function OurSpecialists() {
   return (
-    <section id="oNas" className="ourSpecialists">
+    <section id="aboutUs" className="ourSpecialists">
       <div className="container">
-        <h3>Nasi specjaliści</h3>
+        <h3 className="specialistsHeader">Nasi specjaliści</h3>
         <div className="specialistsContent">
           {employeesData.map((employee, index) => {
             const imageUrl = employee.imageUrl && employee.imageUrl.trim() !== "" ? employee.imageUrl : "images/avatar.webp";

@@ -5,7 +5,6 @@ function CompanyService(props) {
 
   return (
     <div className={serviceClassName}>
-      <div className="dot"></div>
       <h4 className="serviceName">{props.name}</h4>
       <span className="new">(nowość)</span>
     </div>

@@ -1,26 +1,20 @@
 import "./Menu.css";
 
-function Menu(props) {
+function Menu() {
   return (
     <ul className="menu">
       <li>
-        <a className="btn" href="#oNas">
+        <a className="menuBtn" href="#aboutUs">
           O nas
         </a>
       </li>
       <li>
-        <a className="btn" href="#oferta">
+        <a className="menuBtn" href="#offer">
           Oferta
         </a>
       </li>
       <li>
-        {props.contactBtnIsDisable ? (
-          <button className="btn disabled">Kontakt</button>
-        ) : (
-          <a className="btn" href="#kontakt">
-            Kontakt
-          </a>
-        )}
+        <button className="menuBtn disabled">Kontakt</button>
       </li>
     </ul>
   );

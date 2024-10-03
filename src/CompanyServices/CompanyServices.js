@@ -4,9 +4,9 @@ import services from "./data.js";
 
 function CompanyServices() {
   return (
-    <section id="oferta" className="companyServices">
+    <section id="offer" className="companyServices">
       <div className="container">
-        <h3>Czym zajmuje się nasza firma?</h3>
+        <h3 className="servicesHeading">Czym zajmuje się nasza firma?</h3>
         <div className="servicesContent">
           {services.map((item, index) => {
             return <CompanyService name={item.name} isNew={item.isNew} key={index} />;

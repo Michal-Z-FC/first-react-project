@@ -3,10 +3,10 @@
   background-color: #f1f1f1;
 }
 
-.ourSpecialists h3 {
+.specialistsHeader {
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 700;
   color: #152d41;
 }
 
@@ -18,7 +18,7 @@
 }
 
 @media screen and (min-width: 600px) {
-  .ourSpecialists h3 {
+  .specialistsHeader {
     text-align: left;
   }
 }

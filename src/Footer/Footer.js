@@ -7,12 +7,12 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container footerContainer">
-        <p>MyCom - wszelkie prawa zastrzeżone {new Date().getFullYear()}</p>
+        <p className="footerParagraph">MyCom - wszelkie prawa zastrzeżone {new Date().getFullYear()}</p>
         <div className="icons">
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+          <a className="linkIcon" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faFacebook} className="icon" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+          <a className="linkIcon" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faInstagram} className="icon" />
           </a>
         </div>

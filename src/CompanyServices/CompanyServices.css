@@ -3,10 +3,10 @@
   background-color: #405d78;
 }
 
-.companyServices h3 {
+.servicesHeading {
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.4444rem;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -15,14 +15,14 @@
   width: 100%;
   max-width: 720px;
   margin: 4rem auto 0;
-  grid-template-columns: minmax(auto, 300px);
+  grid-template-columns: minmax(auto, 340px);
   gap: 2rem;
   align-items: center;
   justify-content: center;
 }
 
 @media screen and (min-width: 600px) {
-  .companyServices h3 {
+  .servicesHeading {
     text-align: left;
   }
 
@@ -36,5 +36,9 @@
   .servicesContent {
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
+  }
+
+  .servicesHeading {
+    font-size: 2rem;
   }
 }

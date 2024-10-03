@@ -9,7 +9,7 @@ function App() {
       <Header />
       <OurSpecialists />
       <CompanyServices />
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }

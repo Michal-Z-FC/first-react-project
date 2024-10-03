@@ -4,8 +4,8 @@
   align-items: center;
 }
 
-.specialist .imageContainer {
-  flex: 0 0 140px;
+.specialistImageContainer {
+  flex: 0 0 197px;
   aspect-ratio: 1;
   border-radius: 100%;
   background-size: cover;
@@ -13,13 +13,15 @@
   background-repeat: no-repeat;
 }
 
-.specialist .bolder {
+.textBolder {
   margin: 1.2rem 0 0.5rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-.specialist p {
-  font-size: 0.9rem;
+.textDefault {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 600px) {
@@ -28,15 +30,16 @@
     gap: 0 4rem;
   }
 
-  .specialist:nth-child(even) .imageContainer {
+  .specialist:nth-child(even) .specialistImageContainer {
     order: 2;
   }
 
-  .specialist:nth-child(even) p {
+  .specialist:nth-child(even) .textBolder,
+  .specialist:nth-child(even) .textDefault {
     text-align: right;
   }
 
-  .specialist .bolder {
+  .textBolder {
     margin-top: 0;
   }
 }

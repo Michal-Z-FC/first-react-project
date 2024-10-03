@@ -11,35 +11,45 @@
   transition: transform 0.5s;
 }
 
-.service:hover {
-  transform: scale(1.05);
-}
-
-.service .serviceName {
+.serviceName {
   position: relative;
   text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.333rem;
+  font-weight: 400;
 }
 
-.service.newService::before {
+.newService::before {
   content: "";
   position: absolute;
-  width: 20px;
+  width: 38px;
   aspect-ratio: 1;
-  top: -10px;
-  left: -10px;
+  top: -19px;
+  left: -19px;
   border-radius: 100%;
   background-color: #e07a64;
 }
 
-.service .new {
+.new {
   display: none;
   margin-top: 0.2rem;
+  font-size: 1rem;
   font-weight: 400;
-  font-size: 0.9rem;
 }
 
-.service.newService .new {
+.newService .new {
   display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .newService::before {
+    width: 22px;
+    top: -11px;
+    left: -11px;
+  }
+}
+
+@media (hover: hover) {
+  .service:hover {
+    transform: scale(1.05);
+  }
 }
